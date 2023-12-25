@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="background" fitHeight="775.0" fitWidth="380.0">
+         <image>
+            <Image url="@antartica%20baekgrund.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titleText" alignment="CENTER" blendMode="ADD" contentDisplay="CENTER" layoutX="73.0" layoutY="56.0" prefHeight="146.0" prefWidth="214.0" text="STICK HERO" textAlignment="CENTER" textFill="#5fd3bc" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Roboto Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" blendMode="SOFT_LIGHT" layoutX="121.0" layoutY="342.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="117.0" style="-fx-background-radius: 1000;" text="PLAY" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font></Button>
+      <Rectangle fx:id="startingPillar" arcHeight="5.0" arcWidth="5.0" height="221.0" layoutX="140.0" layoutY="623.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+      <ImageView fx:id="stickman" fitHeight="48.0" fitWidth="51.0" layoutX="154.0" layoutY="575.0">
+         <image>
+            <Image url="@stickman.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" alignment="CENTER" blendMode="ADD" contentDisplay="CENTER" layoutX="71.0" layoutY="56.0" prefHeight="146.0" prefWidth="214.0" text="0" textAlignment="CENTER" textFill="#5fd3bc" textOverrun="CLIP" visible="false" wrapText="true">
+         <font>
+            <Font name="Roboto Bold" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="cherryScore" alignment="CENTER" blendMode="ADD" contentDisplay="CENTER" layoutX="301.0" layoutY="14.0" prefHeight="21.0" prefWidth="79.0" text="0" textAlignment="CENTER" textFill="#5fd3bc" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="cherryImg" fitHeight="27.0" fitWidth="29.0" layoutX="295.0" layoutY="14.0">
+         <image>
+            <Image url="@cherry.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
